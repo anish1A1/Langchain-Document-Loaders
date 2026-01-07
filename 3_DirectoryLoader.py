@@ -15,3 +15,15 @@ print("\n", docs[348].metadata)
 
 
 print("\n Total length/pages of all pdfs", len(docs))
+
+# learning how to use default and lazy load
+
+docs1 = loader.load()
+for document in docs1:
+    print(document.metadata)
+ 
+
+   
+docs2 = loader.lazy_load()
+for document in docs2:
+    print(document.metadata) 
